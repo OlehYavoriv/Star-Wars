@@ -1,0 +1,32 @@
+@import '../../styles/variables.scss';
+
+.error {
+    &__container {
+        padding-top: 10rem;
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+
+    &__message {
+        font-size: 2.6rem;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 2rem;
+        color: $yellow-metal;
+        line-height: 1.7;
+        text-shadow: 0.2rem 0 0.2rem $clam-shell,
+            0 0.2rem 0.2rem $clam-shell,
+            -0.2rem 0 0.2rem $clam-shell,
+            0 -0.2rem 0.2rem $clam-shell;
+    }
+
+    &__video {
+        max-width: 100%;
+        width: 48rem;
+        margin: 0 auto;
+        display: block;
+        border-radius: 1rem;
+        border: 0.3rem solid $yellow-metal;
+        box-shadow: 0 1.6rem 2.4rem 0.2rem hsla(0, 0%, 100%, 0.02), 0 0.6rem 3rem 0.5rem hsla(0, 0%, 100%, 0.04), 0 0.8rem 1rem -0.5rem hsla(0, 0%, 100%, 0.1);
+    }
+}
