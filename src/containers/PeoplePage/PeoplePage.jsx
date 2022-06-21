@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { getApiResource } from "../../utils/network";
 import { API_PEOPLE } from "../../constants/api";
+import { getPeopleId, getPeopleImage } from "../../services/getPeopleData";
+import PeopleList from "../../components/PeopleList";
 // import styles from "./styles.module.scss";
 
 const PeoplePage = () => {
@@ -10,11 +12,16 @@ const PeoplePage = () => {
     const res = await getApiResource(url);
 
     const peopleList = res.results.map(({ name, url }) => {
+      const id = getPeopleId(url);
+      const img = getPeopleImage(id);
+
       return {
+        id,
         name,
-        url,
+        img,
       };
     });
+
     setPeople(peopleList);
   };
 
@@ -22,20 +29,7 @@ const PeoplePage = () => {
     getResource(API_PEOPLE);
   }, []);
 
-  return (
-    <>
-      {people && (
-        <ul>
-          {people.map(({ name, url }) => (
-            <li key={name}>
-              {name}
-              <p>{url}</p>
-            </li>
-          ))}
-        </ul>
-      )}
-    </>
-  );
+  return <>{people && <PeopleList people={people} />}</>;
 };
 
 export default PeoplePage;
