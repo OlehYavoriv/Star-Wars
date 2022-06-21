@@ -1,6 +1,6 @@
 import React from "react";
 import PeoplePage from "../PeoplePage";
-// import styles from "./App.module.scss";
+import "./App.module.scss";
 
 const App = () => {
   return (
