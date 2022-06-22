@@ -1,5 +1,5 @@
 import styles from "./styles.module.scss";
-import video from "../../assets/bg/error-video.mp4";
+import video from "@assets/bg/error-video.mp4";
 
 const ErrorMessage = () => {
   return (

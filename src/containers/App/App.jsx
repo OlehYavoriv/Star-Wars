@@ -1,5 +1,5 @@
 import React from "react";
-import PeoplePage from "../PeoplePage";
+import PeoplePage from "@containers/PeoplePage";
 import "./App.module.scss";
 
 const App = () => {

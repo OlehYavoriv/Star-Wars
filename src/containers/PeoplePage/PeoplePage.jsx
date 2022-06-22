@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { getApiResource } from "../../utils/network";
-import { API_PEOPLE } from "../../constants/api";
-import { getPeopleId, getPeopleImage } from "../../services/getPeopleData";
-import PeopleList from "../../components/PeopleList";
-import withErrorApi from "../../hoc/withErrorApi";
+import { getApiResource } from "@utils/network";
+import { API_PEOPLE } from "@constants/api";
+import { getPeopleId, getPeopleImage } from "@services/getPeopleData";
+import PeopleList from "@components/PeopleList";
+import withErrorApi from "@hoc/withErrorApi";
 // import styles from "./styles.module.scss";
 
 const PeoplePage = ({ setErrorApi }) => {
