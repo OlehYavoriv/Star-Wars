@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import { getApiResource } from "@utils/network";
 import { API_PEOPLE } from "@constants/api";
@@ -41,6 +42,10 @@ const PeoplePage = ({ setErrorApi }) => {
       {people && <PeopleList people={people} />}
     </>
   );
+};
+
+PeoplePage.propTypes = {
+  setErrorApi: PropTypes.func,
 };
 
 export default withErrorApi(PeoplePage);
