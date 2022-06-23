@@ -1,39 +1,4 @@
-@import "../../styles/variables.scss";
-
-@font-face {
-  font-family: 'DIN Next W01 Regular';
-  src: local('DINNextW01Regular'), url(../../styles/Fonts/DINNextW01Regular.otf) format('otf');
-}
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
-body {
-  box-sizing: border-box;
-  font-family: 'DIN Next W01 Regular';
-  font-size: 1.6rem;
-  color: $white;
-  background-image: url(../../assets/bg/star-wars-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
+.wrapper {
+  max-width: 144rem;
+  margin: 0 auto;
 }
