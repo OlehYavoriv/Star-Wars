@@ -1,0 +1,51 @@
+@import '@styles/variables.scss';
+
+.btns {
+    &__container {
+        max-width: 144rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        padding: 0 1.5rem;
+        margin-top: 2rem;
+    }
+
+}
+
+.link {
+    button {
+        min-width: 10rem;
+        font-family: 'DIN Next W01 Regular';
+        color: $white;
+        font-weight: 600;
+        font-size: 1.5rem;
+        border: 0.1rem solid $white;
+        background-color: transparent;
+        margin: 0rem 2rem 2rem;
+        cursor: pointer;
+        transition: all 0.5s;
+        text-align: center;
+        border-radius: 1rem;
+        padding: 0.7rem 1rem;
+
+        &:disabled {
+            color: $dusty-gray;
+            background-color: transparent;
+            border-color: $dusty-gray;
+            cursor: auto;
+
+            &:hover {
+                color: $dusty-gray;
+                background-color: transparent;
+                border-color: $dusty-gray;
+                cursor: auto;
+            }
+        }
+
+        &:hover {
+            background-color: $white;
+            color: $black;
+        }
+    }
+
+}
