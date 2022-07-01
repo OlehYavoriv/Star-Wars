@@ -1,0 +1,25 @@
+@import '../../styles/variables.scss';
+
+.wrapper {
+    margin-top: 4.5rem;
+    padding: 0 1.5rem;
+}
+
+.person {
+    &__name {
+        padding: $spacing-small;
+        font-size: 1.8rem;
+        font-weight: $font-bold;
+        color: $white;
+        background-color: $cornflower-blue;
+        border-radius: 0.5rem 0.5rem 0.5rem 0;
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2rem;
+        border-left: 0.5rem solid $cornflower-blue;
+        border-radius: 0.5rem;
+    }
+}
