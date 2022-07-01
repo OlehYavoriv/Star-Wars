@@ -1,0 +1,30 @@
+@import '../../styles/variables.scss';
+
+.container {
+    width: 30rem;
+    padding: 2rem;
+    margin-left: 3rem;
+    background-color: rgba(0, 0, 0, .65);
+    border-radius: 1rem;
+}
+
+.list {
+
+    &__item {
+        padding: 0.5rem;
+        margin-bottom: 0.7rem;
+
+        &_title {
+            text-decoration: underline;
+            text-shadow: 0 0 0.5rem $white, 0 0 4rem $french-rose;
+        }
+    }
+}
+
+@media screen and (max-width:70rem) {
+    .container {
+        width: 100%;
+        margin: 0;
+        margin-top: 2rem;
+    }
+}
