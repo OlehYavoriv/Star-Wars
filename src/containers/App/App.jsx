@@ -15,7 +15,7 @@ const App = () => {
               key={index}
               exact={route.exact}
               path={route.path}
-              element={route.component()}
+              element={<route.component />}
             />
           ))}
         </Routes>
