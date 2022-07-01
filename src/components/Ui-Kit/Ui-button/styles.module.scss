@@ -1,0 +1,41 @@
+@import '../../../styles/variables.scss';
+
+.button {
+    min-width: 10rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-family: $font-family-main;
+    color: $white;
+    font-weight: $font-bold;
+    font-size: $font-size-small;
+    cursor: pointer;
+    transition: $transition;
+
+    &:disabled,
+    &:disabled:hover {
+        color: $dusty-gray;
+        background-color: transparent;
+        border-color: $dusty-gray;
+        cursor: auto;
+    }
+}
+
+.dark {
+    border: 0.1rem solid $white;
+    color: $white;
+
+    &:hover {
+        background-color: $white;
+        color: $black;
+    }
+}
+
+.light {
+    border: 0.1rem solid $black;
+    color: $black;
+
+    &:hover {
+        background-color: $black;
+        color: $white;
+    }
+}
