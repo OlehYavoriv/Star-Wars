@@ -7,6 +7,7 @@ import { API_PERSON } from "@constants/api";
 import withErrorApi from "@hoc/withErrorApi";
 import PersonInfo from "@components/PersonInfo";
 import PersonPhoto from "@components/PersonPhoto";
+import PersonLinkBack from "@components/PersonLinkBack";
 import styles from "./styles.module.scss";
 
 const PersonPage = ({ setErrorApi }) => {
@@ -40,13 +41,16 @@ const PersonPage = ({ setErrorApi }) => {
   }, []);
 
   return (
-    <div className={styles.wrapper}>
-      <span className={styles.person__name}>{personName}</span>
-      <div className={styles.person__container}>
-        <PersonPhoto personPhoto={personPhoto} personName={personName} />
-        {personInfo && <PersonInfo personInfo={personInfo} />}
+    <>
+      <PersonLinkBack />
+      <div className={styles.wrapper}>
+        <span className={styles.person__name}>{personName}</span>
+        <div className={styles.person__container}>
+          <PersonPhoto personPhoto={personPhoto} personName={personName} />
+          {personInfo && <PersonInfo personInfo={personInfo} />}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
