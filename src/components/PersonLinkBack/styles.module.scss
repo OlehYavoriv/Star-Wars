@@ -1,0 +1,18 @@
+@import '../../styles/variables.scss';
+
+.btn_back {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    font-weight: $font-bold;
+    color: $french-rose;
+    cursor: pointer;
+
+    img {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1rem;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
