@@ -1,0 +1,32 @@
+@import '../../styles/variables.scss';
+
+.wrapper {
+    margin-left: 3rem;
+    padding: 2rem 0;
+}
+
+.list {
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.7rem;
+
+        &_title {
+            text-shadow: 0 0 0.5rem $white;
+
+        }
+
+        &_colon {
+            width: 2rem;
+            font-weight: $font-bold;
+            text-align: center;
+        }
+
+        &_episide {
+            padding: 0.5rem;
+            border-radius: 0.3rem;
+            background-color: $cornflower-blue;
+        }
+    }
+
+}
